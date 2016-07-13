@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var header_component_1 = require('./header/header.component');
 var sidebar_component_1 = require('./sidebar/sidebar.component');
+var auth_component_1 = require('./auth/auth.component');
 var list_component_1 = require('./blogs/list.component');
 var router_deprecated_1 = require('@angular/router-deprecated');
 var AppComponent = (function () {
@@ -22,10 +23,10 @@ var AppComponent = (function () {
         core_1.Component({
             selector: 'parent',
             templateUrl: 'app/main.html',
-            directives: [router_deprecated_1.ROUTER_DIRECTIVES, header_component_1.HeaderComponent, sidebar_component_1.SidebarComponent]
+            directives: [router_deprecated_1.ROUTER_DIRECTIVES, header_component_1.HeaderComponent, sidebar_component_1.SidebarComponent, auth_component_1.AuthComponent]
         }),
         router_deprecated_1.RouteConfig([
-            { path: '/list', name: 'BlogList', component: list_component_1.ListComponent /*,  useAsDefault: false*/ },
+            { path: '/list', name: 'BlogList', component: list_component_1.ListComponent }
         ]), 
         __metadata('design:paramtypes', [router_deprecated_1.Router, core_1.NgZone])
     ], AppComponent);
