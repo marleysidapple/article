@@ -20,6 +20,10 @@ export class SidebarComponent {
 		$('.xn-openable').off('click').on('click', function(){
 			$(this).toggleClass('active');
 		});
+
 	}
+		
+
+
 
 }

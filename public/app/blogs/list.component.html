@@ -1,5 +1,5 @@
 
-                    	<div class="panel-body">
+                  <!--   	<div class="panel-body">
                     		<h3>Blog List</h3>
 
                     		<ul>
@@ -10,4 +10,41 @@
                     				<hr/>
                     			</li>
                     		</ul>
-                    	</div>
+                    	</div> -->
+
+
+
+       <!-- START DEFAULT DATATABLE -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">                                
+                                    <h3 class="panel-title">Default</h3>
+                                    <ul class="panel-controls">
+                                        <li><a href="table-datatables.html#" class="panel-collapse"><span class="fa fa-angle-down"></span></a></li>
+                                        <li><a href="table-datatables.html#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
+                                        <li><a href="table-datatables.html#" class="panel-remove"><span class="fa fa-times"></span></a></li>
+                                    </ul>                                
+                                </div>
+                                <div class="panel-body">
+                                    <div class="table-responsive">
+                                        <table class="table datatable">
+                                            <thead>
+                                                <tr>
+                                                    <th>S.no</th>
+                                                    <th>Title</th>
+                                                    <th>Description</th>
+                                                    <th>Author</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <tr *ngFor="let post of allPosts">
+                                                   <td>1</td>
+                                                    <td>{{post.title}}</td>
+                                                    <td>{{post.description}}</td>
+                                                    <td>{{post.author}}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
